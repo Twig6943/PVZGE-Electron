@@ -14,7 +14,7 @@ Grab the latest build from the releases tab
 
 Chromium webgl functionality highly experimental on linux/mac (especially when using the wayland backend). See [this issue](https://github.com/Gzh0821/pvzg_site/issues/85)
 
-If you're using wine wayland driver, you might need to start the .exe with `--in-process-gpu` for it to work properly.
+If you're using wine wayland driver/wine-crossover you might need to start the .exe with `--in-process-gpu` for it to work properly.
 
 # Game running without XWayland, with gpu acceleration
 
