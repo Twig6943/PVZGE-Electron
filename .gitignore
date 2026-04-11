@@ -37,9 +37,12 @@ downloads*.json
 vite-plugin-electron.log
 .tool-versions
 
-#flatpak
+# flatpak
 flatpak-build
 .env
+
+# Kate
+*.kate-swp
 
 playwright-report
 

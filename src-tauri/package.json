@@ -3,7 +3,17 @@
   "version": "0.8.1",
   "description": "PvZ Gardendless running in Tauri",
   "main": "main.js",
-  "scripts": {},
+  "scripts": {
+    "dev": "tauri dev",
+
+    "build": "tauri build",
+
+    "build:linux": "tauri build --target x86_64-unknown-linux-gnu",
+
+    "build:windows": "tauri build --target x86_64-pc-windows-msvc",
+
+    "build:mac": "tauri build --target x86_64-apple-darwin"
+  },
   "author": "Gaozih",
   "license": "ISC",
   "devDependencies": {},

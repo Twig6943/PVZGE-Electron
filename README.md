@@ -26,16 +26,6 @@ Sound effects tend to not work with default settings, open up settings and set `
 
 <img src="assets/AudioDOM.webp">
 
-# Experimental tauri packaging
-
-```
-cd src-tauri
-npx tauri dev
-npx tauri build
-
-# run if you're getting symbol related errors
-cargo clean
-sudo ldconfig
-```
+# [Experimental tauri packaging](./src-tauri)
 
 # [Android version](https://github.com/Cateners/gardendless-android)

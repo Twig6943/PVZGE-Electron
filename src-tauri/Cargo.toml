@@ -26,3 +26,4 @@ tauri-plugin-log = "2"
 
 [profile.release]
 lto = false
+opt-level = 1
