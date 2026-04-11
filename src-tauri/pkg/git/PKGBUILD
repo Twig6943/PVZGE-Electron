@@ -14,18 +14,18 @@ source=('git+https://github.com/Twig6943/PVZGE-Electron.git')
 arch=('any')
 license=('GPL-3.0-or-later')
 makedepends=('rust' 'meson' 'git' 'perl' 'nasm')
-depends=('zerotier-one' 'webkit2gtk' 'libappindicator-gtk3' 'libayatana-appindicator' 'gtk3' 'glib2')
-conflicts=('zerotier-desktop-ui')
+depends=('webkit2gtk' 'gtk3' 'glib2')
+conflicts=('')
 options=('!lto')
 sha256sums=(SKIP)
 
 build () {
-  cd PVZGE-Electron
-  make official
+  cd PVZGE-Electron/src-tauri/
+  cargo build --release
 }
 
 package() {
-  cd DesktopUI
+  cd PVZGE-Electron
   install -Dm755 release/release/pvzge-app "${pkgdir}/usr/bin/pvzge-app"
   install -Dm644 pvzge-app.desktop "${pkgdir}/usr/share/applications/pvzge-app.desktop"
   install -Dm644 pvzge-app.png "${pkgdir}/usr/share/icons/hicolor/512x512/apps/pvzge-app.png"

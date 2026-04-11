@@ -1,14 +1,9 @@
 {
-  "name": "pvzge-electron-app",
+  "name": "pvzge-app",
   "version": "0.8.1",
-  "description": "PvZ Gardendless running in Electron",
+  "description": "PvZ Gardendless running in Tauri",
   "main": "main.js",
-  "scripts": {
-    "start": "electron .",
-    "build:linux": "electron-builder --linux --x64",
-    "build:win": "electron-builder --win --x64",
-    "build:mac": "electron-builder --mac --x64"
-  },
+  "scripts": {},
   "author": "Gaozih",
   "license": "ISC",
   "devDependencies": {},

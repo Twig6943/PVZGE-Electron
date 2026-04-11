@@ -2,7 +2,7 @@
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
   "productName": "pvzge-app",
   "version": "0.1.0",
-  "identifier": "com.tauri.dev",
+  "identifier": "com.gaozih.dev",
   "build": {
     "frontendDist": "../pvzge_web/docs"
   },

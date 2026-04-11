@@ -29,9 +29,13 @@ Sound effects tend to not work with default settings, open up settings and set `
 # Experimental tauri packaging
 
 ```
-mv package.json package-electron.json
-mv package-tauri.json package.json
-npx run dev
+cd src-tauri
+npx tauri dev
+npx tauri build
+
+# run if you're getting symbol related errors
+cargo clean
+sudo ldconfig
 ```
 
 # [Android version](https://github.com/Cateners/gardendless-android)
