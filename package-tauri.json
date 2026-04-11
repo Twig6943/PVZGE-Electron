@@ -1,0 +1,45 @@
+{
+  "name": "pvzge-electron-app",
+  "version": "0.8.1",
+  "description": "PvZ Gardendless running in Electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build:linux": "electron-builder --linux --x64",
+    "build:win": "electron-builder --win --x64",
+    "build:mac": "electron-builder --mac --x64"
+  },
+  "author": "Gaozih",
+  "license": "ISC",
+  "devDependencies": {},
+  "build": {
+    "appId": "com.gaozih.pvzge",
+    "productName": "PvZ Gardendless",
+    "files": [
+      "pvzge_web/docs/**/*",
+      "assets/icons/**",
+      "main.js",
+      "package.json"
+    ],
+    "directories": {
+      "output": "release"
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Game",
+      "icon": "assets/icons/icon.png"
+    },
+    "win": {
+      "target": "portable",
+      "icon": "assets/icons/icon.ico"
+    },
+    "mac": {
+      "target": "dmg",
+      "icon": "assets/icons/icon.icns"
+    }
+  },
+  "dependencies": {
+    "@tauri-apps/cli": "^2.10.1",
+    "@tauri-apps/plugin-global-shortcut": "^2.3.1"
+  }
+}

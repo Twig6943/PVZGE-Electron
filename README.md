@@ -25,3 +25,11 @@ If you're using wine wayland driver/wine-crossover you might need to start the .
 Sound effects tend to not work with default settings, open up settings and set `Audio Load Mode` to `DOM`
 
 <img src="assets/AudioDOM.webp">
+
+# Experimental tauri packaging
+
+```
+mv package.json package-electron.json
+mv package-tauri.json package.json
+npx run dev
+```

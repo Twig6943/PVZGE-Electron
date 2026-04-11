@@ -42,3 +42,7 @@ flatpak-build
 .env
 
 playwright-report
+
+# Cargo
+src-tauri/target/
+src-tauri/gen/schemas
