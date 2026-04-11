@@ -28,6 +28,7 @@ yarn-debug.log*
 yarn-error.log*
 .eslintcache
 package-lock.json
+pnpm-lock.yaml
 
 public/**/*.js
 !public/webviewPreload.js

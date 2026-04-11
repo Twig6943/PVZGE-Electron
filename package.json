@@ -1,6 +1,6 @@
 {
   "name": "pvzge-electron-app",
-  "version": "0.5.0",
+  "version": "0.8.1",
   "description": "PvZ Gardendless running in Electron",
   "main": "main.js",
   "scripts": {
