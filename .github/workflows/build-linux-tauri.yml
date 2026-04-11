@@ -39,7 +39,8 @@ jobs:
           set -e
 
           cd src-tauri
-          npx tauri build
+          cargo build --release
+
 
           
           makepkg -si --noconfirm
