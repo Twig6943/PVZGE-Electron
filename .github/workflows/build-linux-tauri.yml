@@ -38,9 +38,9 @@ jobs:
           sudo -u builder bash <<'EOF'
           set -e
 
-          cd src-tauri
+          cd src-tauri/pkg/git
+          
           makepkg -si --noconfirm
-
           cp *.pkg.tar.zst ../AppImage/
 
           cd ../AppImage/
