@@ -12,7 +12,7 @@
   "author": "Gaozih",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^31.0.1",
+    "electron": "^39.8.7",
     "electron-builder": "^26.0.12"
   },
   "build": {
