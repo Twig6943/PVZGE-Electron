@@ -11,8 +11,8 @@ jobs:
     container:
       image: archlinux:latest
 
-permissions:
-  contents: write
+    permissions:
+      contents: write
 
     steps:
       - name: Install base dependencies
@@ -37,11 +37,15 @@ permissions:
         run: |
           sudo -u builder bash <<'EOF'
           set -e
+
           cd src-tauri/pkg/git
           makepkg -si --noconfirm
+
           cp *.pkg.tar.zst ../AppImage/
+
           cd ../AppImage/
           tar -xvf $(ls *.pkg.tar.zst | grep -v debug)
+
           chmod +x AppImage.sh
           ./AppImage.sh
           EOF
