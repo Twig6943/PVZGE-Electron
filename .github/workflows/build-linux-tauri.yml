@@ -18,7 +18,7 @@ jobs:
       - name: Install base dependencies
         run: |
           pacman -Syu --noconfirm archlinux-keyring
-          pacman -Syu --noconfirm base-devel git sudo wget zsync
+          pacman -Syu --noconfirm base-devel git sudo wget zsync cargo
 
       - name: Create build user
         run: |
