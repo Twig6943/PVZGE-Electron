@@ -28,8 +28,8 @@ git clone https://github.com/Twig6943/PVZGE-Electron
 
 ## 4. Prepare directories
 Inside the cloned repo:  
-- Create a folder called `pvzge_site`  
-- Inside `pvzge_site` create another folder called `docs`  
+- Create a folder called `pvzge_web`  
+- Inside `pvzge_web` create another folder called `docs`  
 
 ---
 
