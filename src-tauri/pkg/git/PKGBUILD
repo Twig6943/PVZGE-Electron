@@ -18,7 +18,9 @@ options=('!lto')
 sha256sums=(SKIP)
 
 build () {
-  cd PVZGE-Electron/src-tauri/
+  cd PVZGE-Electron
+  git submodule update --init --recursive
+  cd src-tauri
   npm install @tauri-apps/cli
   npm install @tauri-apps/plugin-global-shortcut
   npx tauri build
