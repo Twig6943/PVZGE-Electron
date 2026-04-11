@@ -1,6 +1,6 @@
 {
   "name": "pvzge-electron-app",
-  "version": "0.5.0",
+  "version": "0.8.1",
   "description": "PvZ Gardendless running in Electron",
   "main": "main.js",
   "scripts": {
@@ -12,7 +12,7 @@
   "author": "Gaozih",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^31.0.1",
+    "electron": "^39.8.7",
     "electron-builder": "^26.0.12"
   },
   "build": {
