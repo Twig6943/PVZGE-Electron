@@ -19,7 +19,8 @@ sha256sums=(SKIP)
 
 build () {
   cd PVZGE-Electron/src-tauri/
-  npx tauri dev
+  npm install
+  npm run tauri build
 }
 
 package() {
