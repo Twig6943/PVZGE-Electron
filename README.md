@@ -18,7 +18,7 @@ If you're using wine wayland driver/wine-crossover you might need to start the .
 
 # Game running without XWayland, with gpu acceleration
 
-<img src="/assets/Showcase.webp">
+<img src="assets/Showcase.webp">
 
 # Audio issue
 
