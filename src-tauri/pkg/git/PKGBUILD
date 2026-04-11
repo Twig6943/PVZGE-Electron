@@ -13,14 +13,14 @@ url='https://github.com/Twig6943/PVZGE-Electron'
 source=('git+https://github.com/Twig6943/PVZGE-Electron.git')
 arch=('any')
 license=('GPL-3.0-or-later')
-makedepends=('rust' 'meson' 'git' 'perl' 'nasm')
-depends=('webkit2gtk' 'gtk3' 'glib2' 'nodejs' 'npm')
+makedepends=('rust' 'meson' 'git' 'perl' 'nasm' 'nodejs' 'npm')
+depends=('webkit2gtk' 'gtk3' 'glib2')
 options=('!lto')
 sha256sums=(SKIP)
 
 build () {
   cd PVZGE-Electron/src-tauri/
-  cargo build --release
+  npx tauri dev
 }
 
 package() {
